@@ -1,0 +1,53 @@
+ .inicio {
+    background-image: url('../img/header.jpg');
+  }
+  
+  .inicio {
+    background-image: url('../img/header.webp');
+  }
+  
+  
+.header{
+    background-color: $grisOscuro;
+   
+   
+   
+    &.inicio{
+      background-position: center center;
+      background-size: cover;
+
+      
+      @include tablet {
+        min-height: 70rem;
+      }  
+      .contenido-header{
+        @include tablet{
+            min-height: 70rem;
+        }
+      }
+    }
+}
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+  
+    h1{
+        text-align: center;
+        align-items: center;
+        color: $blanco;
+    }
+
+    .titulo {
+        /* Para que el título ocupe todo el espacio entre barra y final y quede centrado */
+        flex-grow: 1;               /* ocupa el espacio disponible */
+        display: flex;
+        align-items: center;        /* centra verticalmente dentro de este espacio */
+        justify-content: center;    /* centra horizontalmente */
+        text-align: center;
+        color: $blanco;
+      }
+
+}
