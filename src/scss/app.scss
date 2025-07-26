@@ -1,3 +1,4 @@
+// base
 @import 'base/normalize';
 @import 'base/variables';
 @import 'base/mixins';
@@ -5,7 +6,7 @@
 @import 'base/utilidades';
 @import 'base/botones';
 
-/** UI**/
+/** UI layout**/
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/navegacion';
@@ -14,3 +15,7 @@
 @import 'layout/contactoW';
 @import'layout/inferior';
 @import'layout/lugares';
+
+/** paginas  internas **/
+@import 'internas/nosotros';
+@import 'internas/anuncios' ;
