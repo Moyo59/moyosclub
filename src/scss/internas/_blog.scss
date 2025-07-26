@@ -1,0 +1,38 @@
+.entrada-blog {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    img{
+        border-radius: 5%;
+    }
+    ul{
+        list-style: none;
+    }
+    
+    @include tablet {
+      flex-direction: row;
+      align-items: center; // Alinea todos los hijos verticalmente
+  
+      .imagen {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 400px; // Ajusta según necesidad
+          object-fit: contain;
+        }
+      }
+
+  
+      .contenido-blog {
+        flex: 1;
+        margin: 3rem;
+      }
+    }
+  }
+
