@@ -33,6 +33,7 @@
     display: $display;
     border: none;
     cursor: pointer;
+    border: none;
 
     &:hover {
         background-color: mix(black, $bgcolor, 15%);

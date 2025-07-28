@@ -25,11 +25,78 @@
                     </nav>
                 </div>
                 <div class="titulo">
-                <h1>Moyo´s Club</h1>
-                <h2>Renta de Casas Vacacionales</h2>
+                <h1>Renta de Casas Vacacionales</h1>
         </div>
     </header>
-<h1>Contacto</h1>
+
+
+<main class="contenedor seccion"> 
+    <h1>Nosotros Te Marcamos</h1>
+
+    <picture>
+        <source  srcset="build/img/destacada3.webp" type="image/webp">
+        <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+        <img loading="lazy" src="build/img/destacada3.jpg" alt="imagem contacto">
+    </picture>
+
+    <h2>LLena el formulatio</h2>
+
+    <form class="formulario">
+
+        <fieldset>
+            <legend>Ingresa tu Informacion</legend>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Tu nombre" id="nombre">
+
+            <label for="email">e-mail</label>
+            <input type="email" placeholder="email" id="email">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" placeholder="Telefono" id="telefono">
+   
+        </fieldset>
+            
+        <fieldset>
+            <legend>Estancia</legend>
+            
+            <label for="opciones">Paquetes</label>
+            <select id="opciones">
+                <option value="" disabled selected>Seleccione su Paquete</option>
+                <option value="Fin de Semana">Fin de Semana (3 días)</option>
+                <option value="7 días">PaqueteQuedes(7 días)</option>
+                <option value="Perzonalizado">Perzonalizado</option>
+            </select>
+
+            <select id="opciones">
+                <option value="" disabled selected>Residencia</option>
+                <option value="Vista a la Alberca">Frente a la Alberca</option>
+                <option value="Estandar">Estandar</option>
+            </select>
+
+            <p>El fin de semana (3 días) viernes a partir de las 12PM y finaliza el dia domingoa las 5PM.</p>
+            <p>PaqueteQuedes (7 días) incluye un dia de limpieza</p>
+            <p>Para un paquete diferente a los establecidos marque la opcion "Perzonalizado"</p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Forma de Contacto</legend>
+
+            <p>¿Como deseas ser Contactado?</p>
+
+            <div class="forma-contacto">
+                <label for="contactar-telefono">Telefono</label>
+                <input name="contacto" type="radio" value="telefono" id="contactar-telefono">
+
+                <label for="contactar-email">Email</label>
+                <input name="contacto" type="radio" value="email" id="contactar-email">
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar" class="boton-verde" >
+    </form>
+
+</main>
 
   
     <footer class="footer section">
