@@ -1,6 +1,10 @@
 .footer{
     padding: 0;
     background-color: $grisOscuro;
+    .navegacion{
+        visibility: visible;
+        opacity: 1;
+    }
    
     .copyright{
         color: $blanco;
